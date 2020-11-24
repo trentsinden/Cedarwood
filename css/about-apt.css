@@ -225,7 +225,7 @@ section {
   /* Quote Section */
   #quote {
     height: auto;
-    padding: 5rem 0;
+    padding: 5rem 1rem;
   }
 
   .quote-text p {
@@ -233,7 +233,7 @@ section {
   }
 
   .quote-text i {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   /* Package Section */
