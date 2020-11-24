@@ -1,0 +1,225 @@
+/* Header Background Image */
+header {
+  background: url(../img/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section Padding */
+section {
+  padding: 0 3rem;
+}
+
+/****** COMMITMENT SECTION ******/
+
+/* Commitment Section Positioning */
+.commitment-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.commitment-item {
+  width: 33.33%;
+  text-align: center;
+  margin: 0 2rem;
+}
+
+/* Commitment Intro */
+.commitment-intro h2 {
+  padding-top: 2rem;
+}
+
+.commitment-intro p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+/* Commitment Items */
+.commitment-item img {
+  height: 10rem;
+}
+
+.commitment-item p {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+/****** QUOTE SECTION ******/
+
+/* Quote Section Positioning */
+#quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+/* Quote Section Content */
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-text p {
+  color: #373a36;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 5rem;
+}
+
+.quote-text i {
+  color: #d48166;
+  font-size: 2.5rem;
+}
+
+/****** PACKAGES SECTION ******/
+
+/* Packages Intro */
+.package-intro p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+/* Packages Section Positioning */
+.package-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.package-item {
+  width: 50%;
+  text-align: center;
+  margin: 0 2rem;
+}
+
+/* Packages Section Content */
+.package-item ul {
+  color: #373a36;
+  font-size: 1.3rem;
+  text-align: left;
+  list-style: none;
+}
+
+.package-item li {
+  border-bottom: 0.1rem dotted #d48166;
+  transition: 0.2s ease-in;
+  padding: 0.5rem;
+}
+
+.package-item li:hover {
+  background: #d48166;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.2s ease-out;
+}
+
+@media all and (max-width: 1200px) {
+  /* Commitment Section */
+  .commitment-items {
+    flex-direction: column;
+  }
+
+  .commitment-intro p {
+    font-size: 1.4rem;
+  }
+
+  .commitment-item {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  /* Quote Section */
+  .quote-text p {
+    font-size: 2.3rem;
+  }
+
+  /* Package Section */
+  .package-items {
+    flex-direction: column;
+  }
+
+  .package-intro p {
+    font-size: 1.4rem;
+  }
+
+  .package-item {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  .package-item ul {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* Commitment Section */
+  .commitment-intro p {
+    font-size: 1.3rem;
+  }
+
+  /* Quote Section */
+  .quote-text p {
+    font-size: 2.1rem;
+  }
+
+  /* Package Section */
+  .package-intro p {
+    font-size: 1.3rem;
+  }
+
+  .package-item ul {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* Commitment Section */
+  .commitment-intro p {
+    font-size: 1.2rem;
+  }
+
+  /* Quote Section */
+  .quote-text p {
+    font-size: 1.9rem;
+  }
+
+  /* Package Section */
+  .package-intro p {
+    font-size: 1.2rem;
+  }
+
+  .package-item ul {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  /* Commitment Section */
+  .commitment-intro p {
+    font-size: 1.2rem;
+  }
+
+  /* Quote Section */
+  .quote-text p {
+    font-size: 1.7rem;
+  }
+
+  /* Package Section */
+  .package-intro p {
+    font-size: 1.2rem;
+  }
+
+  .package-item ul {
+    font-size: 1.1rem;
+  }
+}

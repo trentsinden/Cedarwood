@@ -1,0 +1,363 @@
+/* This is a formatting stylesheet that is used on every page
+to reduce the amount of repeating code */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Yellowtail&display=swap");
+
+/* Page Formatting */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* Font Sizing */
+h1 {
+  color: #373a36;
+  font-family: "Lobster", cursive;
+  font-size: 10rem;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+h2 {
+  border-bottom: 0.1rem solid #d48166;
+  color: #373a36;
+  font-weight: 900;
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #373a36;
+  font-size: 2.5rem;
+}
+
+p {
+  color: #373a36;
+  font-size: 1.3rem;
+}
+
+hr {
+  border: 0.05rem solid #d48166;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  background: #f5f5f5;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d48166;
+  border-radius: 6px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #373a36;
+}
+
+/* Navbar */
+nav {
+  background: #373a36;
+  padding: 0.5rem 2.5rem;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 1rem 0;
+}
+
+nav ul li.items {
+  margin: 0 1rem;
+  order: 3;
+  position: relative;
+  text-align: center;
+  width: auto;
+}
+
+nav ul li.items:after {
+  background: #d48166;
+  bottom: 0.3rem;
+  content: "";
+  height: 0.1rem;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+nav ul li.items:hover:after {
+  bottom: 0.5rem;
+  opacity: 1;
+}
+
+nav ul li img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+nav ul li.logo {
+  color: white;
+  cursor: default;
+  flex: 1;
+  font-family: "Yellowtail", cursive;
+  font-size: 1.8rem;
+  user-select: none;
+}
+
+nav ul li a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+nav ul li:hover a {
+  color: #d48166;
+}
+
+nav ul li i {
+  font-size: 1.4rem;
+}
+
+nav ul li.btn {
+  display: none;
+}
+
+nav ul li.btn.hide i:before {
+  content: "\f00d";
+}
+
+/* Header Positioning */
+header {
+  align-items: center;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+
+/* Section Formatting */
+section {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Switch Page Button */
+.page-button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.page-button button {
+  background: #d48166;
+  border: 0.2rem solid #373a36;
+  border-radius: 5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.page-button button:hover {
+  background: #373a36;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #373a36;
+  padding: 5rem;
+}
+
+.footer-item ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.footer-item li {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 2.5rem;
+  text-align: center;
+}
+
+.footer-item a {
+  color: white;
+}
+
+.footer-item a:hover {
+  color: #d48166;
+}
+
+.footer-item i {
+  color: #d48166;
+  padding-right: 0.7rem;
+}
+
+@media all and (max-width: 1200px) {
+  /* Font Sizing */
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .page-button button {
+    font-size: 1.5rem;
+  }
+
+  .footer-item li {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* Font Sizing */
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .page-button button {
+    font-size: 1.4rem;
+  }
+
+  .footer-item li {
+    font-size: 1.2rem;
+  }
+
+  /* Mobile Navbar View */
+  nav {
+    padding: 0.5rem 2rem;
+  }
+
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.items.show {
+    display: block;
+  }
+
+  nav ul li.btn {
+    display: block;
+  }
+
+  nav ul li.items:hover {
+    border-radius: 0.5rem;
+    border: 0.1rem solid #d48166;
+  }
+
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* Font Sizing */
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .page-button button {
+    font-size: 1.3rem;
+  }
+
+  .footer-item li {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  /* Font Sizing */
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .page-button button {
+    font-size: 1.2rem;
+  }
+
+  .footer-item li {
+    font-size: 0.9rem;
+  }
+}
