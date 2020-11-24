@@ -205,6 +205,10 @@ section {
 
 @media all and (max-width: 600px) {
   /* Commitment Section */
+  .commitment-item {
+    margin: 2rem 0;
+  }
+
   .commitment-intro p {
     font-size: 1.2rem;
   }
@@ -228,6 +232,10 @@ section {
   }
 
   /* Package Section */
+  .package-item {
+    margin: 2rem 0;
+  }
+
   .package-intro p {
     font-size: 1.2rem;
   }
