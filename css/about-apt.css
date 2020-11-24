@@ -211,7 +211,11 @@ section {
 
   /* Quote Section */
   .quote-text p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .quote-text i {
+    font-size: 2rem;
   }
 
   /* Package Section */
