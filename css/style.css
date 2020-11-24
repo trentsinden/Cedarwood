@@ -339,7 +339,7 @@ footer {
 @media all and (max-width: 600px) {
   /* Section Padding */
   section {
-    padding: 0 1rem;
+    padding: 0;
   }
 
   /* Font Sizing */
