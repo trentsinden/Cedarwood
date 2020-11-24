@@ -204,6 +204,11 @@ section {
 }
 
 @media all and (max-width: 600px) {
+  /* Section Padding */
+  section {
+    padding: 0 1rem;
+  }
+
   /* Commitment Section */
   .commitment-item {
     margin: 2rem 0;

@@ -164,7 +164,6 @@ header {
 /* Section Formatting */
 section {
   font-family: "Poppins", sans-serif;
-  padding: 0 5rem;
 }
 
 /* Switch Page Button */
@@ -337,11 +336,6 @@ footer {
 }
 
 @media all and (max-width: 600px) {
-  /* Section Padding */
-  section {
-    padding: 0;
-  }
-
   /* Font Sizing */
   nav ul li.logo {
     font-size: 1.5rem;
