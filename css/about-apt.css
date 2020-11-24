@@ -204,6 +204,11 @@ section {
 }
 
 @media all and (max-width: 600px) {
+  /* Section Padding */
+  section {
+    padding: 0 1rem;
+  }
+
   /* Commitment Section */
   .commitment-intro p {
     font-size: 1.2rem;
@@ -211,7 +216,8 @@ section {
 
   /* Quote Section */
   .quote-text p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
   }
 
   .quote-text i {

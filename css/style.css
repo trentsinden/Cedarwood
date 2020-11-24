@@ -337,12 +337,16 @@ footer {
 
 @media all and (max-width: 600px) {
   /* Font Sizing */
+  nav ul li.logo {
+    font-size: 1.3rem;
+  }
+
   h1 {
     font-size: 5rem;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   h3 {
@@ -358,6 +362,11 @@ footer {
   }
 
   .footer-item li {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+  }
+
+  /* Footer Padding */
+  footer {
+    padding: 3rem;
   }
 }
