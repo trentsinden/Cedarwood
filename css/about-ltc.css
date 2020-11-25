@@ -12,37 +12,37 @@ section {
 
 /****** COMMITMENT SECTION ******/
 
-/* Commitment Section Positioning */
-.commitment-items {
+/* Vision Section Positioning */
+.vision-items {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding-top: 5rem;
 }
 
-.commitment-item {
+.vision-item {
   width: 33.33%;
   text-align: center;
   margin: 0 2rem;
 }
 
-/* Commitment Intro */
-.commitment-intro h2 {
+/* Vision Intro */
+.vision-intro h2 {
   padding-top: 2rem;
 }
 
-.commitment-intro p {
+.vision-intro p {
   font-size: 1.5rem;
   text-align: center;
   line-height: 3rem;
 }
 
-/* Commitment Items */
-.commitment-item img {
+/* Vision Items */
+.vision-item img {
   height: 10rem;
 }
 
-.commitment-item p {
+.vision-item p {
   text-align: center;
   line-height: 2.5rem;
 }
@@ -51,17 +51,16 @@ section {
 
 /* Quote Section Positioning */
 #quote {
+  height: 100vh;
   align-items: center;
   display: flex;
-  height: 100vh;
   justify-content: center;
-  text-align: center;
 }
 
 /* Quote Section Content */
 .quote-text {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
@@ -78,67 +77,23 @@ section {
   font-size: 2.5rem;
 }
 
-/****** PACKAGES SECTION ******/
-
-/* Packages Intro */
-.package-intro p {
-  font-size: 1.5rem;
-  text-align: center;
-  line-height: 3rem;
-}
-
-/* Packages Section Positioning */
-.package-items {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 5rem;
-}
-
-.package-item {
-  width: 50%;
-  text-align: center;
-  margin: 0 2rem;
-}
-
-/* Packages Section Content */
-.package-item ul {
-  color: #373a36;
-  font-size: 1.3rem;
-  text-align: left;
-  list-style: none;
-}
-
-.package-item li {
-  border-bottom: 0.1rem dotted #d48166;
-  transition: 0.2s ease-in;
-  padding: 0.5rem;
-}
-
-.package-item li:hover {
-  background: #d48166;
-  color: white;
-  transform: scale(1.05);
-  transition: 0.2s ease-out;
-}
-
 @media all and (max-width: 1200px) {
   /* Section Padding */
   section {
     padding: 0 3rem;
   }
 
-  /* Commitment Section */
-  .commitment-items {
+  /* Vision Section */
+  .vision-items {
     flex-direction: column;
   }
 
-  .commitment-item {
+  .vision-item {
     margin: 2rem 0 0;
     width: 100%;
   }
 
-  .commitment-intro p {
+  .vision-intro p {
     font-size: 1.4rem;
   }
 
@@ -156,24 +111,6 @@ section {
     font-size: 2.3rem;
     padding: 2rem 0;
   }
-
-  /* Package Section */
-  .package-items {
-    flex-direction: column;
-  }
-
-  .package-intro p {
-    font-size: 1.4rem;
-  }
-
-  .package-item {
-    margin: 2rem 0 0;
-    width: 100%;
-  }
-
-  .package-item ul {
-    font-size: 1.3rem;
-  }
 }
 
 @media all and (max-width: 1000px) {
@@ -182,8 +119,8 @@ section {
     padding: 0 3rem;
   }
 
-  /* Commitment Section */
-  .commitment-intro p {
+  /* Vision Section */
+  .vision-intro p {
     font-size: 1.2rem;
   }
 
@@ -195,15 +132,6 @@ section {
   .quote-text i {
     font-size: 2rem;
   }
-
-  /* Package Section */
-  .package-intro p {
-    font-size: 1.2rem;
-  }
-
-  .package-item ul {
-    font-size: 1.1rem;
-  }
 }
 
 @media all and (max-width: 800px) {
@@ -212,12 +140,12 @@ section {
     padding: 0 2rem;
   }
 
-  /* Commitment Section */
-  .commitment-intro p {
+  /* Vision Section */
+  .vision-intro p {
     font-size: 1.2rem;
   }
 
-  .commitment-item img {
+  .vision-item img {
     height: 8rem;
   }
 
@@ -229,15 +157,6 @@ section {
   .quote-text i {
     font-size: 2rem;
   }
-
-  /* Package Section */
-  .package-intro p {
-    font-size: 1.2rem;
-  }
-
-  .package-item ul {
-    font-size: 1.1rem;
-  }
 }
 
 @media all and (max-width: 600px) {
@@ -246,8 +165,8 @@ section {
     padding: 0 1rem;
   }
 
-  /* Commitment Section */
-  .commitment-intro p {
+  /* Vision Section */
+  .vision-intro p {
     font-size: 1.2rem;
   }
 
@@ -258,14 +177,5 @@ section {
 
   .quote-text i {
     font-size: 2rem;
-  }
-
-  /* Package Section */
-  .package-intro p {
-    font-size: 1.2rem;
-  }
-
-  .package-item ul {
-    font-size: 1.1rem;
   }
 }

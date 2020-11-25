@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cedarwood Village | About</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about-ltc.css" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <script
+      src="https://kit.fontawesome.com/626ae7754c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li class="logo">
+          <img src="img/tree.svg" alt="tree" />Cedarwood Village
+        </li>
+        <li class="items"><a href="./index.html">Home</a></li>
+        <li class="items"><a href="./about-ltc.html">About</a></li>
+        <li class="items"><a href="./suites-ltc.html">Rooms</a></li>
+        <li class="items"><a href="./amenity-ltc.html">Amenities</a></li>
+        <li class="items"><a href="./careers-ltc.html">Careers</a></li>
+        <li class="items"><a href="./contact-ltc.html">Contact</a></li>
+        <li class="btn">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+      <div class="header-title">
+        <h1>About</h1>
+      </div>
+    </header>
+
+    <!-- Vision Section -->
+    <section id="vision">
+      <div class="vision-intro">
+        <h2>Our Vision</h2>
+        <p>
+          Cedarwood Village Long Term Care is a 90 bed facility licensed by the
+          Ministry of Long Term Care. Our Vision: To appreciate the hearts and
+          meaning of all people.
+        </p>
+      </div>
+      <div class="vision-items">
+        <div class="vision-item">
+          <img src="img/about-visit-icon.png" alt="visits" />
+          <h3>Visits</h3>
+          <hr />
+          <p>
+            The accessible outside courtyard and gazebo area is a popular
+            visiting space complete with perennial flower gardens.
+          </p>
+        </div>
+        <div class="vision-item">
+          <img src="img/about-apartment-icon.png" alt="rooms" />
+          <h3>Rooms</h3>
+          <hr />
+          <p>
+            Cedarwood is an CARF accredited facility offering a mixture of
+            private, semi private and ward accommodations. Our home offers
+            spacious lounge areas for activities arranged by our qualified
+            activity staff or for visiting with family members and friends.
+          </p>
+        </div>
+        <div class="vision-item">
+          <img src="img/about-nurse-icon.png" alt="dining" />
+          <h3>Services</h3>
+          <hr />
+          <p>
+            Nursing services are provided by qualified nursing staff who
+            genuinely care for the well being of all of our residents.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote">
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <p>To appreciate the hearts and meaning of all people.</p>
+        <i class="fas fa-quote-right"></i>
+      </div>
+    </section>
+
+    <!-- Long Term Care Button -->
+    <section id="button">
+      <div class="page-button">
+        <a href="./about-apt.html"><button>Apartment About</button></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-item">
+        <ul>
+          <li>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>500 Queensway
+            West, Simcoe, ON
+          </li>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i>519-426-8305, EXT. 210
+          </li>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i
+            ><a href="mailto:ksmith@cedarwoodvillage.ca">
+              ksmith@cedarwoodvillage.ca</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JQuery For Navbar -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $(".items").toggleClass("show");
+          $("ul li").toggleClass("hide");
+        });
+      });
+    </script>
+  </body>
+</html>
