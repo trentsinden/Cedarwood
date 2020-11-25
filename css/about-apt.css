@@ -123,13 +123,14 @@ section {
 }
 
 @media all and (max-width: 1200px) {
+  /* Section Padding */
+  section {
+    padding: 0 3rem;
+  }
+
   /* Commitment Section */
   .commitment-items {
     flex-direction: column;
-  }
-
-  .commitment-intro p {
-    font-size: 1.4rem;
   }
 
   .commitment-item {
@@ -137,7 +138,16 @@ section {
     width: 100%;
   }
 
+  .commitment-intro p {
+    font-size: 1.4rem;
+  }
+
   /* Quote Section */
+  #quote {
+    height: auto;
+    padding: 5rem 1rem;
+  }
+
   .quote-text p {
     font-size: 2.3rem;
   }
@@ -162,35 +172,57 @@ section {
 }
 
 @media all and (max-width: 1000px) {
+  /* Section Padding */
+  section {
+    padding: 0 3rem;
+  }
+
   /* Commitment Section */
   .commitment-intro p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   /* Quote Section */
   .quote-text p {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
+  }
+
+  .quote-text i {
+    font-size: 2rem;
   }
 
   /* Package Section */
   .package-intro p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .package-item ul {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 @media all and (max-width: 800px) {
+  /* Section Padding */
+  section {
+    padding: 0 2rem;
+  }
+
   /* Commitment Section */
   .commitment-intro p {
     font-size: 1.2rem;
   }
 
+  .commitment-item img {
+    height: 8rem;
+  }
+
   /* Quote Section */
   .quote-text p {
-    font-size: 1.9rem;
+    font-size: 2rem;
+  }
+
+  .quote-text i {
+    font-size: 2rem;
   }
 
   /* Package Section */
@@ -199,7 +231,7 @@ section {
   }
 
   .package-item ul {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -210,24 +242,11 @@ section {
   }
 
   /* Commitment Section */
-  .commitment-item {
-    margin: 2rem 0;
-  }
-
   .commitment-intro p {
     font-size: 1.2rem;
   }
 
-  .commitment-item img {
-    height: 8rem;
-  }
-
   /* Quote Section */
-  #quote {
-    height: auto;
-    padding: 5rem 1rem;
-  }
-
   .quote-text p {
     font-size: 1.5rem;
   }
@@ -237,10 +256,6 @@ section {
   }
 
   /* Package Section */
-  .package-item {
-    margin: 2rem 0;
-  }
-
   .package-intro p {
     font-size: 1.2rem;
   }
