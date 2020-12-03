@@ -164,6 +164,7 @@ header {
 /* Section Formatting */
 section {
   font-family: "Poppins", sans-serif;
+  padding: 0 3rem;
 }
 
 /* Switch Page Button */
@@ -228,6 +229,11 @@ footer {
 }
 
 @media all and (max-width: 1200px) {
+  /* Section Padding */
+  section {
+    padding: 0 3rem;
+  }
+
   /* Font Sizing */
   nav ul li.logo {
     font-size: 1.8rem;
@@ -259,6 +265,11 @@ footer {
 }
 
 @media all and (max-width: 1000px) {
+  /* Section Padding */
+  section {
+    padding: 0 3rem;
+  }
+
   /* Font Sizing */
   nav ul li.logo {
     font-size: 1.7rem;
@@ -322,6 +333,11 @@ footer {
 }
 
 @media all and (max-width: 800px) {
+  /* Section Padding */
+  section {
+    padding: 0 2rem;
+  }
+
   /* Font Sizing */
   nav ul li.logo {
     font-size: 1.6rem;
@@ -358,6 +374,11 @@ footer {
 }
 
 @media all and (max-width: 600px) {
+  /* Section Padding */
+  section {
+    padding: 0 1rem;
+  }
+
   /* Font Sizing */
   nav ul li.logo {
     font-size: 1.5rem;

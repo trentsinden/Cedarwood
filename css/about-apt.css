@@ -1,13 +1,9 @@
+/****** HEADER SECTION ******/
 /* Header Background Image */
 header {
   background: url(../img/about-bg.jpg);
   background-size: cover;
   background-position: center;
-}
-
-/* Section Padding */
-section {
-  padding: 0 3rem;
 }
 
 /****** COMMITMENT SECTION ******/
@@ -26,18 +22,19 @@ section {
   margin: 0 2rem;
 }
 
-/* Commitment Intro */
+/* Commitment Section Content */
 .commitment-intro h2 {
   padding-top: 2rem;
 }
 
-.commitment-intro p {
+/* Intro For Commitment And Packages Sections Are The Same */
+.commitment-intro p,
+.package-intro p {
   font-size: 1.5rem;
   text-align: center;
   line-height: 3rem;
 }
 
-/* Commitment Items */
 .commitment-item img {
   height: 10rem;
 }
@@ -79,14 +76,6 @@ section {
 }
 
 /****** PACKAGES SECTION ******/
-
-/* Packages Intro */
-.package-intro p {
-  font-size: 1.5rem;
-  text-align: center;
-  line-height: 3rem;
-}
-
 /* Packages Section Positioning */
 .package-items {
   display: flex;
@@ -123,11 +112,6 @@ section {
 }
 
 @media all and (max-width: 1200px) {
-  /* Section Padding */
-  section {
-    padding: 0 3rem;
-  }
-
   /* Commitment Section */
   .commitment-items {
     flex-direction: column;
@@ -138,7 +122,8 @@ section {
     width: 100%;
   }
 
-  .commitment-intro p {
+  .commitment-intro p,
+  .package-intro p {
     font-size: 1.4rem;
   }
 
@@ -162,10 +147,6 @@ section {
     flex-direction: column;
   }
 
-  .package-intro p {
-    font-size: 1.4rem;
-  }
-
   .package-item {
     margin: 2rem 0 0;
     width: 100%;
@@ -177,14 +158,10 @@ section {
 }
 
 @media all and (max-width: 1000px) {
-  /* Section Padding */
-  section {
-    padding: 0 3rem;
-  }
-
   /* Commitment Section */
-  .commitment-intro p {
-    font-size: 1.2rem;
+  .commitment-intro p,
+  .package-intro p {
+    font-size: 1.3rem;
   }
 
   /* Quote Section */
@@ -207,13 +184,9 @@ section {
 }
 
 @media all and (max-width: 800px) {
-  /* Section Padding */
-  section {
-    padding: 0 2rem;
-  }
-
   /* Commitment Section */
-  .commitment-intro p {
+  .commitment-intro p,
+  .package-intro p {
     font-size: 1.2rem;
   }
 
@@ -241,13 +214,9 @@ section {
 }
 
 @media all and (max-width: 600px) {
-  /* Section Padding */
-  section {
-    padding: 0 1rem;
-  }
-
   /* Commitment Section */
-  .commitment-intro p {
+  .commitment-intro p,
+  .package-intro p {
     font-size: 1.2rem;
   }
 

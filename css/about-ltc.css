@@ -10,7 +10,7 @@ section {
   padding: 0 3rem;
 }
 
-/****** COMMITMENT SECTION ******/
+/****** VISION SECTION ******/
 
 /* Vision Section Positioning */
 .vision-items {
@@ -26,7 +26,7 @@ section {
   margin: 0 2rem;
 }
 
-/* Vision Intro */
+/* Vision Section Content */
 .vision-intro h2 {
   padding-top: 2rem;
 }
@@ -37,7 +37,6 @@ section {
   line-height: 3rem;
 }
 
-/* Vision Items */
 .vision-item img {
   height: 10rem;
 }

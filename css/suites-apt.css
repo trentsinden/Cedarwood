@@ -1,0 +1,104 @@
+/* Header Section */
+
+header {
+  background: url(../img/suites-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/****** ONE BEDROOM SECTION AND TWO BEDROOM SECTION ******/
+/* One Bedroom And Two Bedroom Section Positioning */
+.one-bedroom-items,
+.two-bedroom-items {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.one-bedroom-item,
+.two-bedroom-item {
+  width: 50%;
+  text-align: center;
+}
+
+/* One Bedroom And Two Bedroom Section Content */
+.one-bedroom-intro h2 {
+  padding-top: 2rem;
+}
+
+.one-bedroom-item img,
+.two-bedroom-item img {
+  width: 100%;
+  border: 0.3rem solid #373a36;
+  transition: 0.3s linear;
+}
+
+.one-bedroom-item img:hover,
+.two-bedroom-item img:hover {
+  transform: scale(1.02);
+}
+
+.one-bedroom-item ul,
+.two-bedroom-item ul {
+  color: #373a36;
+  font-size: 1.3rem;
+  list-style: square inside;
+}
+
+.one-bedroom-item li,
+.two-bedroom-item li {
+  padding: 0.5rem;
+}
+
+.one-bedroom-item p,
+.two-bedroom-item p {
+  color: #d48166;
+  font-weight: bold;
+}
+
+@media all and (max-width: 1200px) {
+  /* One Bedroom And Two Bedroom Section Positioning */
+  .one-bedroom-items,
+  .two-bedroom-items {
+    flex-direction: column;
+    height: auto;
+    margin: 3rem 0;
+  }
+
+  .one-bedroom-item,
+  .two-bedroom-item {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  /* One Bedroom And Two Bedroom List Font Sizing */
+  .one-bedroom-item ul,
+  .two-bedroom-item ul {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* One Bedroom And Two Bedroom List Font Sizing */
+  .one-bedroom-item ul,
+  .two-bedroom-item ul {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* One Bedroom And Two Bedroom List Font Sizing */
+  .one-bedroom-item ul,
+  .two-bedroom-item ul {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  /* One Bedroom And Two Bedroom List Font Sizing */
+  .one-bedroom-item ul,
+  .two-bedroom-item ul {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,169 @@
+/* Header Section */
+
+header {
+  background: url(../img/suites-ltc-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/****** PRIVATE, SEMI PRIVATE, AND PALLIATIVE SECTION ******/
+/* Private, Semi Private, And Palliative Section Positioning */
+.private-items,
+.semi-private-items,
+.palliative-items {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.private-item,
+.semi-private-item,
+.palliative-item {
+  width: 50%;
+  text-align: center;
+}
+
+.palliative-images {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 0 30rem;
+  padding: 5rem 0 0;
+}
+
+.palliative-image img {
+  height: 50vh;
+  width: auto;
+}
+
+.palliative-image:first-of-type {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.palliative-image:last-of-type {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+/* Private and Semi Private Section Content */
+.private-intro h2 {
+  padding-top: 2rem;
+}
+
+.palliative-intro p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.private-item img,
+.semi-private-item img {
+  width: 100%;
+  border: 0.3rem solid #373a36;
+  transition: 0.3s linear;
+}
+
+.private-item img:hover,
+.semi-private-item img:hover {
+  transform: scale(1.02);
+}
+
+.private-item ul,
+.semi-private-item ul {
+  color: #373a36;
+  font-size: 1.3rem;
+  list-style: square inside;
+  margin-top: 1.5rem;
+}
+
+.private-item li,
+.semi-private-item li {
+  padding: 0.5rem;
+}
+
+.private-item p,
+.semi-private-item p {
+  color: #d48166;
+  font-weight: bold;
+}
+
+@media all and (max-width: 1200px) {
+  /*  Private, Semi Private, And Palliative Section Positioning */
+  .private-items,
+  .semi-private-items {
+    flex-direction: column;
+    height: auto;
+    margin: 3rem 0;
+  }
+
+  .palliative-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .private-item,
+  .semi-private-item {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  /* Palliative Section Content */
+  .palliative-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  /* Private And Semi Private List Font Sizing */
+  .private-item ul,
+  .semi-private-item ul {
+    font-size: 1.2rem;
+  }
+
+  /* Palliative Intro Font Sizing */
+  .palliative-intro p {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* Private And Semi Private List Font Sizing */
+  .private-item ul,
+  .semi-private-item ul {
+    font-size: 1.2rem;
+  }
+
+  /* Palliative Intro Font Sizing */
+  .palliative-intro p {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* Private And Semi Private List Font Sizing */
+  .private-item ul,
+  .semi-private-item ul {
+    font-size: 1.1rem;
+  }
+
+  /* Palliative Intro Font Sizing */
+  .palliative-intro p {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  /* Private And Semi Private List Font Sizing */
+  .private-item ul,
+  .semi-private-item ul {
+    font-size: 1.1rem;
+  }
+
+  /* Palliative Intro Font Sizing */
+  .palliative-intro p {
+    font-size: 1.2rem;
+  }
+}
