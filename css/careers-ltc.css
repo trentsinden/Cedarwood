@@ -1,0 +1,110 @@
+/****** HEADER SECTION ******/
+/* Header Background Image */
+header {
+  background: url(../img/volunteer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/****** VOLUNTEER SECTION ******/
+/* Volunteer Section Content */
+.volunteer-intro h2 {
+  padding-top: 2rem;
+}
+
+.volunteer-intro p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+/****** ACTIVITIES SECTION ******/
+/* Activities Section Positioning */
+.activity-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.activity-item {
+  width: 25%;
+  text-align: center;
+  margin: 2.5rem 1.5rem;
+}
+
+/* Activities Section Content */
+.activity-item i {
+  color: #d48166;
+  font-size: 3rem;
+}
+
+.activity-item h4 {
+  color: #373a36;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+@media all and (max-width: 1200px) {
+  /* Volunteer Section Content */
+  .volunteer-intro p {
+    font-size: 1.4rem;
+  }
+
+  /* Activities Section Content */
+  .activity-items {
+    flex-direction: column;
+  }
+
+  .activity-item {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* Volunteer Section Content */
+  .volunteer-intro p {
+    font-size: 1.3rem;
+  }
+
+  /* Activity Section Content */
+  .activity-item i {
+    font-size: 2.5rem;
+  }
+
+  .activity-item h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* Volunteer Section Content */
+  .volunteer-intro p {
+    font-size: 1.2rem;
+  }
+
+  /* Activity Section Content */
+  .activity-item i {
+    font-size: 2.5rem;
+  }
+
+  .activity-item h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  /* Volunteer Section Content */
+  .volunteer-intro p {
+    font-size: 1.2rem;
+  }
+
+  /* Activity Section Content */
+  .activity-item i {
+    font-size: 2rem;
+  }
+
+  .activity-item h4 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,264 @@
+/****** HEADER SECTION ******/
+/* Header Background Image */
+
+header {
+  background: url(../img/amenity-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/****** DINING SECTION ******/
+/* Dining Section Positioning */
+.dining-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dining-item {
+  width: 50%;
+  margin: 2rem 0 0;
+}
+
+.dining-images {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 0 30rem;
+  margin: 5rem 0;
+}
+
+/* Dining Section Content */
+.dining-intro h2 {
+  padding-top: 2rem;
+}
+
+.dining-item span {
+  background: #d48166;
+  border-radius: 50%;
+  padding: 2rem 2.5rem;
+  opacity: 0.5;
+}
+
+.dining-item ul {
+  font-size: 1.3rem;
+  list-style: none;
+  margin: 0 1.5rem;
+}
+
+.dining-item li {
+  border-bottom: 0.1rem solid #373a36;
+  margin: 2.5rem 0;
+  padding: 1rem;
+}
+
+.dining-item li a {
+  color: #373a36;
+  padding-left: 1rem;
+}
+
+.dining-item li a:hover {
+  color: #d48166;
+}
+
+.dining-item p {
+  line-height: 2.5rem;
+}
+
+.dining-image img {
+  height: 50vh;
+  width: auto;
+}
+
+.dining-image:first-of-type {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.dining-image:last-of-type {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+/****** SERVICES SECTION ******/
+/* Services Section Positioning */
+.service-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 0;
+}
+
+.service-item {
+  width: 50%;
+  text-align: center;
+  margin: 2.5rem 1.5rem;
+}
+
+/* Services Section Content */
+.service-intro p,
+.activity-intro p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.service-item img {
+  width: 100%;
+}
+
+.service-item hr {
+  width: 50%;
+  margin: 0 auto;
+  border: 0.05rem solid #d48166;
+}
+
+.service-item p {
+  line-height: 2.5rem;
+}
+
+/****** ACTIVITIES SECTION ******/
+/* Activities Section Positioning */
+.activity-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.activity-item {
+  width: 25%;
+  text-align: center;
+  margin: 2.5rem 1.5rem;
+}
+
+/* Activities Section Content */
+.activity-intro h2 {
+  padding-top: 2rem;
+}
+
+.activity-item i {
+  color: #d48166;
+  font-size: 3rem;
+}
+
+.activity-item h4 {
+  color: #373a36;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+/****** CALENDAR SECTION ******/
+/* Calendar Positioning */
+.calendar {
+  margin: 5rem 0 0;
+}
+/* Calendar Content */
+.calendar iframe {
+  height: 100vh;
+  width: 100%;
+}
+
+@media all and (max-width: 1200px) {
+  /* All Sections Positioning */
+  .dining-items,
+  .service-items,
+  .activity-items {
+    flex-direction: column;
+  }
+
+  .dining-item,
+  .service-item,
+  .activity-item {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  /* Dining Section Content */
+  .dining-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .dining-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .dining-item ul {
+    font-size: 1.3rem;
+  }
+
+  /* Service And Activity Section Content */
+  .service-intro p,
+  .activity-intro p {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* Dining Section Content */
+  .dining-item ul {
+    font-size: 1.3rem;
+  }
+
+  /* Service And Activity Section Content */
+  .service-intro p,
+  .activity-intro p {
+    font-size: 1.3rem;
+  }
+
+  /* Activity Section Content */
+  .activity-item i {
+    font-size: 2.5rem;
+  }
+
+  .activity-item h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* Dining Section Content */
+  .dining-item ul {
+    font-size: 1.2rem;
+  }
+
+  /* Service And Activity Section Content */
+  .service-intro p,
+  .activity-intro p {
+    font-size: 1.2rem;
+  }
+
+  /* Activity Section Content */
+  .activity-item i {
+    font-size: 2.5rem;
+  }
+
+  .activity-item h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  /* Dining Section Content */
+  .dining-item ul {
+    font-size: 1.1rem;
+  }
+
+  /* Service And Activity Section Content */
+  .service-intro p,
+  .activity-intro p {
+    font-size: 1.2rem;
+  }
+
+  /* Activity Section Content */
+  .activity-item i {
+    font-size: 2rem;
+  }
+
+  .activity-item h4 {
+    font-size: 1.2rem;
+  }
+}

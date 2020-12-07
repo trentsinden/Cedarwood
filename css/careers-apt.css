@@ -1,0 +1,112 @@
+/****** HEADER SECTION ******/
+/* Header Background Image */
+header {
+  background: url(../img/careers-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/****** OPPORTUNITY SECTION ******/
+/* Opportunity Section Positioning */
+.opportunity-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.opportunity-item {
+  width: 75%;
+  text-align: center;
+  margin: 0 2rem;
+}
+
+/* Opportunity Section Content */
+.opportunity-intro h2 {
+  padding-top: 2rem;
+}
+
+.opportunity-intro p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.opportunity-item p {
+  line-height: 2.5rem;
+}
+
+.opportunity-item a {
+  color: #d48166;
+}
+
+.opportunity-item ul {
+  color: #373a36;
+  font-size: 1.3rem;
+  text-align: left;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.opportunity-item li {
+  border-bottom: 0.1rem dotted #d48166;
+  transition: 0.2s ease-in;
+  padding: 0.5rem;
+}
+
+.opportunity-item li:hover {
+  background: #d48166;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.2s ease-out;
+}
+
+@media all and (max-width: 1200px) {
+  /* Opportunity Section Positioning */
+  .opportunity-items {
+    flex-direction: column;
+  }
+
+  .opportunity-item {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  /* Opportunity Section Content */
+  .opportunity-intro p {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* Opportunity Section Content */
+  .opportunity-intro p {
+    font-size: 1.3rem;
+  }
+
+  .opportunity-item ul {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* Opportunity Section Content */
+  .opportunity-intro p {
+    font-size: 1.2rem;
+  }
+
+  .opportunity-item ul {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  /* Opportunity Section Content */
+  .opportunity-intro p {
+    font-size: 1.2rem;
+  }
+
+  .opportunity-item ul {
+    font-size: 1.1rem;
+  }
+}

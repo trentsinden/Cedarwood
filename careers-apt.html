@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cedarwood Village | Careers</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/careers-apt.css" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <script
+      src="https://kit.fontawesome.com/626ae7754c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li class="logo">
+          <img src="img/tree.svg" alt="tree" />Cedarwood Village
+        </li>
+        <li class="items"><a href="./index.html">Home</a></li>
+        <li class="items"><a href="./about-apt.html">About</a></li>
+        <li class="items"><a href="./suites-apt.html">Suites</a></li>
+        <li class="items"><a href="./amenity-apt.html">Amenities</a></li>
+        <li class="items"><a href="./careers-apt.html">Careers</a></li>
+        <li class="items"><a href="./contact-apt.html">Contact</a></li>
+        <li class="btn">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+      <div class="header-title">
+        <h1>Careers</h1>
+      </div>
+    </header>
+
+    <!-- Opportunity Section -->
+    <section id="opportunity">
+      <div class="opportunity-intro">
+        <h2>Opportunity Awaits</h2>
+        <p>
+          We are always looking for healthcare professionals who share in our
+          passion for providing quality care and superior levels of service to
+          our residents! Imagine having the opportunity to enhance our
+          resident’s lives…all within a caring, compassionate environment!
+          Quality care can only be achieved though quality people!
+        </p>
+      </div>
+      <div class="opportunity-items">
+        <div class="opportunity-item">
+          <h3>What We Offer</h3>
+          <hr />
+          <ul>
+            <li>Competitive Pay</li>
+            <li>Paid Sick Days</li>
+            <li>
+              Full benefits package including: Extended Health Care, Life
+              Insurance, Dental, Vision Care
+            </li>
+            <li>Pension Plan</li>
+            <li>Professional Development Opportunities</li>
+            <li>
+              An excellent work culture where you will be appreciated as an
+              integral part of our caring team!
+            </li>
+          </ul>
+        </div>
+        <div class="opportunity-item">
+          <h3>Job Board</h3>
+          <hr />
+          <p>
+            Click the link below to visit our Indeed job board to find out what
+            job openings we have!
+          </p>
+          <p>
+            <a
+              href="https://www.indeedjobs.com/cedarwood-village-4bc245e/_hl/en_CA?cpref=JXWAtnzf3XW5aRnY2g_zoikN87qYWwuQ4bsQNOB8qWI"
+              >Cedarwood Village Job Board</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Long Term Care Button -->
+    <section id="button">
+      <div class="page-button">
+        <a href="./careers-ltc.html"
+          ><button>Long Term Care Volunteers</button></a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-item">
+        <ul>
+          <li>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>500 Queensway
+            West, Simcoe, ON
+          </li>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i>519-426-8305, EXT. 210
+          </li>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i
+            ><a href="mailto:ksmith@cedarwoodvillage.ca">
+              ksmith@cedarwoodvillage.ca</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JQuery For Navbar -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $(".items").toggleClass("show");
+          $("ul li").toggleClass("hide");
+        });
+      });
+    </script>
+  </body>
+</html>
